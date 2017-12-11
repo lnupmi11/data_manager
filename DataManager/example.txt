@@ -1,0 +1,42 @@
+<User>
+	<name>Oleh</name>
+	<secondName>Datskiv</secondName>
+	<age>19</age>
+</User>
+<User>
+	<name>Ira</name>
+	<secondName>Dmytriv</secondName>
+	<age>20</age>
+</User>
+<Taxi>
+	<User>
+		<name>Oleh</name>
+		<secondName>Datskiv</secondName>
+		<age>19</age>
+	</User>
+	<number>504</number>
+</Taxi>
+<Taxi>
+	<number>513</number>
+</Taxi>
+<User>
+	<name>Oleh</name>
+	<secondName>Datskiv</secondName>
+	<age>19</age>
+</User>
+<User>
+	<name>Ira</name>
+	<secondName>Dmytriv</secondName>
+	<age>20</age>
+</User>
+<Taxi>
+<User>
+	<name>Oleh</name>
+	<secondName>Datskiv</secondName>
+	<age>19</age>
+</User>
+	<number>504</number>
+</Taxi>
+<Taxi>
+	<number>513</number>
+</Taxi>
