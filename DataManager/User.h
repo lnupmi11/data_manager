@@ -18,7 +18,7 @@ public:
 		this->name = "";
 		this->secondName = "";
 		this->age = 0;
-		this->type = "";
+		this->type = "User";
 	}
 	User(string name, string secondName, float age, string type)
 	{
@@ -63,8 +63,35 @@ public:
 		out << "</" << this->type << ">" << endl;
 	}
 
-	void Deserialization()
+	void Deserialization(vector<string> arr)
 	{
-
+		for (int i = 1; i < arr.size() - 1; i++)
+		{
+			string str;
+			bool flag = false;
+			for (int j = 2; j < arr[i].size(); j++)
+			{
+				if (arr[i][j] == '<')
+				{
+					break;
+				}
+				else if (flag)
+				{
+					str += arr[i][j];
+				}
+				else if (arr[i][j] == '>')
+				{
+					flag = true;
+				}
+			}
+			switch (i)
+			{
+				case 1: this->name = str; break;
+				case 2: this->secondName = str; break;
+				case 3: this->age = stoi(str); break;
+				default:
+					break;
+			}
+		}
 	}
 };
